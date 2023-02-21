@@ -2,6 +2,18 @@
 #Пример:
 #123 -> 6 (1 + 2 + 3)
 #100 -> 1 (1 + 0 + 0)
-digit = input('Введите трехзначное число: ')
-result = int(digit[0]) + int(digit[1]) + int(digit[2])
-print(digit,'->',result)
+#digit = input('Введите трехзначное число: ')
+#result = int(digit[0]) + int(digit[1]) + int(digit[2])
+#print(digit,'->',result)
+
+# Петя, Катя и Сережа делают из бумаги журавликов. Вместе они сделали S журавликов.
+# Сколько журавликов сделал каждый ребенок, если известно, что Петя и Сережа сделали одинаковое количество журавликов,
+# а Катя сделала в два раза больше журавликов, чем Петя и Сережа вместе?
+# Пример:
+# 6 -> 1  4  1
+# 24 -> 4  16  4
+# 60 -> 10  40  10
+total_birds = int(input('Введите количество журавликов: '))
+kate_birds = int(total_birds / 3 * 2)
+boys_birds = int((total_birds - kate_birds)/2)
+print(F"{total_birds} -> {boys_birds}  {kate_birds}  {boys_birds}")
