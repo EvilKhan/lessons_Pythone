@@ -25,10 +25,24 @@
 # Пример:
 # 385916 -> yes
 # 123456 -> no
-ticket_number = input('Введите номер билета: ')
-first_half = int(ticket_number[0]) + int(ticket_number[1]) + int(ticket_number[2])
-second_half = int(ticket_number[3]) + int(ticket_number[4]) + int(ticket_number[5])
-if first_half == second_half:
-    print('yes')
-else:
-    print('no')
+# ticket_number = input('Введите номер билета: ')
+# first_half = int(ticket_number[0]) + int(ticket_number[1]) + int(ticket_number[2])
+# second_half = int(ticket_number[3]) + int(ticket_number[4]) + int(ticket_number[5])
+# if first_half == second_half:
+#     print('yes')
+# else:
+#     print('no')
+
+# Требуется определить, можно ли от шоколадки размером n × m долек отломить k долек,
+# если разрешается сделать один разлом по прямой между дольками
+# (то есть разломить шоколадку на два прямоугольника).
+# Пример:
+# 3 2 4 -> yes
+# 3 2 1 -> no
+# choko_length = int(input('Введите длину шоколадки: '))
+# choko_width = int(input('Введите ширину шоколадки: '))
+# choko_piece = int(input('Сколько кусочков отломить: '))
+# if choko_piece % choko_width == 0:
+#     print('yes')
+# else:
+#     print('no')
