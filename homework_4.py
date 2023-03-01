@@ -29,3 +29,18 @@ print(total_list)"""
 собирает ягоды с этого куста и с двух соседних с ним.
 Напишите программу для нахождения максимального числа ягод, которое может собрать за один заход собирающий модуль, 
 находясь перед некоторым кустом заданной во входном файле грядки."""
+"""import random
+n = int(input('Введите количество кустов: '))
+blueberry_bed = list() #грядка
+harvest_from_bushes = list() #"троекустие"
+summ = 0
+for i in range(n):
+    blueberry_bed.append(random.randint(1, 100))  #заполняем грядку
+print(blueberry_bed)
+for i in range(len(blueberry_bed) - 1):#шерстим грядку
+    summ = blueberry_bed[i-1] + blueberry_bed[i] + blueberry_bed[i+1] #цепляем троекустие
+    harvest_from_bushes.append(summ) #заполняем список троекустия
+harvest_from_bushes.append(blueberry_bed[-2] + blueberry_bed[-1] + blueberry_bed[0]) #дополняем список недостающим элементом
+print(harvest_from_bushes)
+print(max(harvest_from_bushes)) #методом забираем максимальное"""
+
