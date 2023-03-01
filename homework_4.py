@@ -2,7 +2,21 @@
 Выдать без повторений в порядке возрастания все те числа, которые встречаются в обоих наборах.
 Пользователь вводит 2 числа. n - кол-во элементов первого множества. m - кол-во элементов второго множества.
 Затем пользователь вводит сами элементы множеств."""
-
+"""import random
+total_list = []
+numbers_1 = [random.randint(0, 9) for _ in range(9)]
+numbers_2 = [random.randint(0, 9) for _ in range(9)]
+print(numbers_1)
+print(numbers_2)
+fin_num_1 = sorted(set(numbers_1)) #sorted из множества возвращает список
+fin_num_2 = sorted(set(numbers_2))
+print(fin_num_1)
+print(fin_num_2)
+for i in fin_num_1:
+    for j in fin_num_2:
+        if i == j:
+            total_list.append(i)
+print(total_list)"""
 
 """Задача 24: В фермерском хозяйстве в Карелии выращивают чернику. Она растет на круглой грядке, 
 причем кусты высажены только по окружности. Таким образом, у каждого куста есть ровно два соседних. 
