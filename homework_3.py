@@ -38,11 +38,11 @@
 # Ш, Э, Ю – 8 очков;
 # Ф, Щ, Ъ – 10 очков
 # result = None
-scrab_dict = {1: 'AEIOULNSTRАВЕИНОРСТ', 2: 'DGДКЛМПУ', 3: 'BCMPБГЁЬЯ', 4: 'FHVWYЙЫ', 5: 'KЖЗХЦЧ', 8: 'JXШЭЮ', 10: 'QZФЩЪ'}
-scrab_word = input('Введите слово на английском или русском языке: ').upper()
-result = 0
-for i in scrab_word:
-    for key, value in scrab_dict.items():
-        if i in value:
-            result += key
-print(F'За это слово вы получаете {result} очков')
+# scrab_dict = {1: 'AEIOULNSTRАВЕИНОРСТ', 2: 'DGДКЛМПУ', 3: 'BCMPБГЁЬЯ', 4: 'FHVWYЙЫ', 5: 'KЖЗХЦЧ', 8: 'JXШЭЮ', 10: 'QZФЩЪ'}
+# scrab_word = input('Введите слово на английском или русском языке: ').upper()
+# result = 0
+# for i in scrab_word:
+#     for key, value in scrab_dict.items():
+#         if i in value:
+#             result += key
+# print(F'За это слово вы получаете {result} очков')
