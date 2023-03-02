@@ -4,35 +4,19 @@
 # Программа должна вывести в консоль сколько раз встречается в заданном списке искомое число X,
 # которое мы вводим с клавиатуры, либо выводим на экран, максимально близкое ему по значению
 # import random
-# x = int(input('Введите число Х:'))
-# n = int(input('Введите длину списка: '))
-# my_list = [random.randint(0,100) for _ in range(n)]
-# print(my_list)
-# my_list.sort() #сортируем список
-# print(my_list)
-# near_value_min = None
-# near_value_max = None
-# near_value = None
-# my_dict = {}
-# for item in my_list:
-#     my_dict[item] = my_dict.get(item, 0) +1
-# for i in my_list:
-#     if i < x:
-#         near_value_min = i
-#         i += 1
-# for i in my_list:
-#     if i > x:
-#         near_value_max = i
-#         i += 1
-#         break
-# if x - int(near_value_min) < int(near_value_max) - x:
-#     near_value = near_value_min
+# list_len = int(input('ВВеди длину списка: '))
+# our_number = int(input('Введи число: '))
+# our_list = [random.randint(1,100) for _ in range(list_len)]
+# print(our_list)
+# our_dict = {}
+# min_list = [abs(our_number - el) for el in our_list]
+# min_ind = min_list.index(min(min_list))
+# for item in our_list:
+#     our_dict[item] = our_dict.get(item, 0) + 1
+# if our_dict.get(our_number) is None:
+#     print('ближайшее значение', our_list[min_ind])
 # else:
-#     near_value = near_value_max
-# if my_dict.get(x)==None:
-#     print(F"ближайшее число {near_value}")
-# else:
-#     print(F"Число {x} встречается {my_dict.get(x)} раз")
+#     print(f'{our_number} встречается {our_dict.get(our_number)} раз')
 
 
 # Вторая задача:
