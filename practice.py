@@ -143,14 +143,14 @@ Q, Z – 10 очков.
 Ф, Щ, Ъ – 10 очков"""
 
 # scrab_dict = {1: 'AEIOULNSTRАВЕИНОРСТ', 2: 'DGДКЛМПУ', 3: 'BCMPБГЁЬЯ', 4: 'FHVWYЙЫ', 5: 'KЖЗХЦЧ', 8: 'JXШЭЮ', 10: 'QZФЩЪ'}
-# scrab_word = input('Enter a word: ').upper()
-# result_count = 0
+# scrab_word = input('Enter numb word: ').upper()
 # for l in scrab_word:
 #     for k,v in scrab_dict.items():
 #         if l in v:
 #             result_count+=k
 # print(result_count)
 #print(sum(k for l in scrab_word for k,v in scrab_dict.items() if l in v)) #однострочный вариант
+
 
 """Даны два неупорядоченных набора целых чисел (может быть, с повторениями). 
 Выдать без повторений в порядке возрастания все те числа, которые встречаются в обоих наборах.
@@ -197,3 +197,74 @@ Q, Z – 10 очков.
 # sums_of_blueberries.append(bed_of_blueberries[-2] + bed_of_blueberries[-1] +bed_of_blueberries[0])
 # print(sums_of_blueberries)
 # print(max(sums_of_blueberries))
+
+# n = int(input('Введи предел фибоначчи: '))
+# fib_list = [1, 1]
+# fib_1 = fib_2 = 1
+# i = 0
+# for i in range(2, n):
+#     fib_1, fib_2 = fib_2, fib_1 + fib_2
+#     fib_list.append(fib_2)
+#
+# print(fib_2)
+
+# def fibbonacci(n):
+#     if n in[1,2]:
+#         return 1
+#     else:
+#         return fibbonacci(n-2) + fibbonacci(n - 1)
+#
+# print(fibbonacci(10))
+
+"""заменить максимальные значения списка на минимальные"""
+# n = int(input('Enter n: '))
+# list_def = [random.randint(1, 5) for _ in range(n)]
+#
+# for i in list_def:
+#     if list_def[i] > 3:
+#         list_def[i] = random.randint(1, 3)
+# print(list_def)
+
+"""простое или нет число"""
+# def is_prime(numb):
+#     if numb % 2 == 0:
+#         return numb == 2
+#     d = 3
+#     while d * d <= numb and numb % d != 0:
+#         d += 2
+#     return d * d > numb
+# print(is_prime(int(input("Enter numb number: "))))
+
+"""Напишите программу, которая на вход принимает два числа A и B, 
+и возводит число А в целую степень B с помощью рекурсии.
+*Пример:*
+A = 3; B = 5 -> 243 (3⁵)
+    A = 2; B = 3 -> 8 """
+
+# def degree_of(numb, pow):
+#     if pow == 0:
+#         return 1
+#     return numb * degree_of(numb, pow - 1)
+#
+#
+# a = int(input('Enter a: '))
+# b = int(input('Enter b: '))
+# print(f'А = {a}; В = {b} -> {degree_of(a, b)}')
+
+"""Напишите рекурсивную функцию sum(numb, pow), возвращающую сумму двух целых неотрицательных чисел. 
+Из всех арифметических операций допускаются только +1 и -1. Также нельзя использовать циклы.
+
+*Пример:*
+
+2 2
+    4 """
+
+"""def sum(a, b):
+    if b == 0:
+        return a
+    a += 1
+    b -= 1
+    return sum(a, b)
+
+
+print(sum(3, 10))"""
