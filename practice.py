@@ -109,6 +109,20 @@ import random
 #     print('nearest number ', my_list[min_ind])
 # else:
 #     print(my_dict.get(my_num), 'раз встречается число в списке')
+# list_len = int(input('Введи длину списка: '))
+# f_num = int(input('Какое число искать? '))
+# def_list = [random.randint(1, 100) for _ in range(f_num)]
+# print(def_list)
+# our_dict = {}
+# for elem in def_list:
+#     our_dict[elem] = our_dict.get(elem, 0) + 1
+# min_list = [abs(el - f_num) for el in def_list]
+# print(min_list)
+# min_index = min_list.index(min(min_list))
+# if our_dict.get(f_num) is None:
+#     print('ближайшее число ', def_list[min_index])
+# else:
+#     print(F'число {f_num} встречается {our_dict.get(f_num)} раз(а)')
 
 """В настольной игре Скрабл (Scrabble) каждая буква имеет определенную ценность.
 В случае с английским алфавитом очки распределяются так:
